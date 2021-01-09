@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Yusei+Magic&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+
+}
+.logo{
+  cursor: pointer;
+}
+.navbar{
+  background-color: #FF7F11;
+  color: #000000;
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.navbar ul{
+  list-style: none;
+}
+.navbar li a {
+  color: #000000;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.container{
+  background: linear-gradient(rgba(255, 128, 17, 0.406),rgba(51, 51, 51, 0.68)),url("./img/Floating-burger-PNG.png") no-repeat center center/cover;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  overflow-x: hidden;
+  font-family: 'Yusei Magic', sans-serif;
+  
+}
+.container h1,p {
+  width: 500px;
+  margin: 0 auto;
+  padding: 10px;
+  font-weight: bolder;
+  background-color: rgba(0, 0, 0, 0.372);
+  color: #fff;
+}
+.container h1 {
+  padding: 10px;
+  font-size: 40px;
+}
+.container p{
+  font-size: 20px;
+}
+.img-container{
+  background: linear-gradient(rgba(255, 128, 17, 0.406),rgba(51, 51, 51, 0.68)),url("./img/about.png") no-repeat center center/cover;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-container{
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  flex-direction: column;
+}
+.about-container h1{
+  font-size: 50px;
+  margin-bottom: 60px;
+}
+.about-container p {
+  width: 600px;
+  margin:  0 auto;
+  font-size: 30px;
+  border-radius: 20px;
+  padding: 10px;
+}
+.img img{
+  width: 200px;
+}
+.footer{
+  min-height: 10vh;
+  text-align: center;
+  background-color: #FF7F11;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu{
+  text-align: center;
+  color: #FF7F11;
+  font-size: 25px;
+}
+.menu img{
+  width: 100%;
+}
+.contact-container{
+  background: linear-gradient(rgba(255, 128, 17, 0.406),rgba(51, 51, 51, 0.68)),url("./img/man.png")no-repeat center center/cover;
+  min-height: 80vh;
+  
+}
+.contact-container h1{
+  text-align: center;
+
+}
+
+.text-container{
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  width: 600px;
+  margin: 0 auto;
+}
+
+form{
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+}
+form label{
+  width: 200px;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+}
+form input,textarea{
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.598);
+  color: #fff;
+  outline: none;
+  border-radius: 10px;
+}
+
+button{
+  width: 100%;
+  height: 40px;
+  margin: 10px 0px;
+  color: #000000;
+  background-color: #FF7F11;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  font-size: 25px;
+}
+button:hover{
+  background-color: #fff;
+  color: #FF7F11;
+}
+
+
+
+@media only screen and (max-width : 438px) {
+  .container h1,p{
+    
+    width: 200px;
+  }
+  .container p{
+    width: 200px;
+  }
+  .navbar ul li{
+    display: flex;
+    flex-direction: column;
+    min-height: 10vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-container h1, p{
+    width: 100px;
+  }
+  .img img{
+    display: none;
+  }
+  .about-p p{
+    width: 200px;
+  }
+  .text-container{
+    width: 200px;
+    margin: auto;
+  }
+
+  }
